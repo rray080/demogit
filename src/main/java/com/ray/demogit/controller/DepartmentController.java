@@ -10,9 +10,15 @@ import com.ray.demogit.model.Department;
 @RestController
 @RequestMapping("/api/departments")
 public class DepartmentController {
-	// adding get mapping for department
+	// adding get mapping for department based on id
 	@GetMapping("/department/{id}")
 	public Department getDepartment(@PathVariable long id) {
 		return new Department();
 	}
+	
+	// adding get mapping for retrive all department
+		@GetMapping("/department")
+		public Department getDepartments() {
+			return new Department();
+		}
 }
