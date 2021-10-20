@@ -28,6 +28,7 @@ public class DepartmentController {
 		@PostMapping("/department")
 		public Department addDepartment(@RequestBody Department dept) {
 			return dept;
-
 		}
+		
+		
 }
